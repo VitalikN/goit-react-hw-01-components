@@ -1,0 +1,26 @@
+.transaction__history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+tr {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+th {
+  width: 70px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid green;
+}
+td {
+  width: 70px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid red;
+  margin-bottom: 10px;
+}

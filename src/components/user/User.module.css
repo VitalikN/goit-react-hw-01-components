@@ -1,0 +1,29 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.avatar {
+  border-radius: 50%;
+  outline: 1px solid black;
+}
+.name {
+  font-size: 24px;
+}
+.stats {
+  display: flex;
+  gap: 15px;
+  margin: 10px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
