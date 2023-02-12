@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 export const FriendList = ({ friends }) => {
   return (
-    <ul className={css.friend__list}>
+    <ul className={css.friendList}>
       {friends.map(el => (
         <li className={css.item} key={el.id}>
           <span className={el.isOnline ? css.online : css.offline}></span>
