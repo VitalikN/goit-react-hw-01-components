@@ -1,5 +1,16 @@
 import PropTypes from 'prop-types';
-import css from './User.module.css';
+import {
+  BoxProfile,
+  BoxInfo,
+  TextName,
+  Img,
+  TextInfo,
+  List,
+  Item,
+  ChipInfo,
+  Chip,
+} from './User.styled';
+
 export const Profile = ({
   username,
   tag,
@@ -8,29 +19,29 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt={avatar} className={css.avatar} width="200" />
-        <p className={css.name}>{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <BoxProfile>
+      <BoxInfo>
+        <Img src={avatar} alt={avatar} width="200" />
+        <TextName>{username}</TextName>
+        <TextInfo>@{tag}</TextInfo>
+        <TextInfo>{location}</TextInfo>
+      </BoxInfo>
 
-      <ul className={css.stats}>
-        <li className={css.list}>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li className={css.list}>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li className={css.list}>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <List>
+        <Item>
+          <ChipInfo>Followers</ChipInfo>
+          <Chip>{followers}</Chip>
+        </Item>
+        <Item>
+          <ChipInfo>Views</ChipInfo>
+          <Chip>{views}</Chip>
+        </Item>
+        <Item>
+          <ChipInfo>Likes</ChipInfo>
+          <Chip>{likes}</Chip>
+        </Item>
+      </List>
+    </BoxProfile>
   );
 };
 
