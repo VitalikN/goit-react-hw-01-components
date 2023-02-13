@@ -23,20 +23,6 @@ export const Chip = styled.span`
   height: 15px;
   border-radius: 50%;
 `;
-//   outline: none;
-//   border-radius: 50%;
-//   width: 10px;
-//   height: 10px;
-//   background-color: ${props => {
-//     switch (props.isOnline) {
-//       case 'online':
-//         return 'green';
-//       case 'offline':
-//         return 'red';
-//       default:
-//         return 'red';
-//     }
-//   }};
 
 export const Img = styled.img`
   padding: 10px;
