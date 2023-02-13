@@ -15,7 +15,7 @@ function getRandomHexColor() {
 export const Statistics = ({ title, stats }) => {
   return (
     <Container>
-      {title ? <Title>{title}</Title> : ''}
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(el => (
