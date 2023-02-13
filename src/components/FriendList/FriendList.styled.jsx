@@ -19,7 +19,9 @@ export const Item = styled.li`
   background-color: rgb(239 239 239);
 `;
 export const Chip = styled.span`
-  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 `;
 //   outline: none;
 //   border-radius: 50%;
