@@ -9,7 +9,7 @@ export const Table = styled.table`
 `;
 
 export const Tbody = styled.tbody`
-  tr:nth-child(2n) {
+  tr:nth-of-type(2n) {
     background-color: rgb(220 239 239);
   }
 `;
